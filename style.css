@@ -9,9 +9,9 @@ html {
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: #fff; /* Change text color to white */
+  color: #fff; /* White text for contrast */
   line-height: 1.6;
-  background-color: #121212; /* Slightly dark background for entire page */
+  background-color: #121212; /* Dark background color */
   overflow-x: hidden;
 }
 
@@ -22,7 +22,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('file:///C:/Users/mpotm/Desktop/kamjoro/images/blog.jpg') center center / cover no-repeat;
+  background: url('blog.jpg') center center / cover no-repeat; /* Image is in the same directory */
   z-index: -1;
   animation: float 10s ease-in-out infinite;
   transform-style: preserve-3d;
@@ -49,9 +49,9 @@ body {
   position: relative;
   z-index: 1;
   background-color: #000; /* Black container background */
-  padding: 20px; /* Add some spacing */
-  border-radius: 8px; /* Rounded corners for a modern look */
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Subtle shadow effect */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 /* Navbar */
@@ -139,7 +139,7 @@ section h2 {
   margin-bottom: 15px;
   border-bottom: 2px solid #ff9900;
   padding-bottom: 5px;
-  color: #ff9900; /* Add a highlight color for section titles */
+  color: #ff9900;
 }
 .skills-list {
   list-style-type: disc;
@@ -161,25 +161,4 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
-  transform: translateZ(20px);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar .container {
-    flex-direction: column;
-  }
-  .navbar .nav-links {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .navbar .nav-links li {
-    margin: 5px 0;
-  }
-  .hero h2 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
 }
